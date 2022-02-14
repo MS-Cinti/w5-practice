@@ -55,22 +55,22 @@ console.log(c)
 */
 
 
-/*function scope:*/
-/*
-function d() {
+//function scope:
+
+/*function d() {
     if(1+1 === 2){
+        var a = "hello1";
+        let b = "hello2";
+        const c = "hello3"
+        console.log(a)
+        console.log(b)
+        console.log(c)
     }
-    var a = "hello1"
-    let b = "hello2"
-    const c = "hello3" 
-    console.log(a)
-    console.log(b)
-    console.log(c)
 }
 
-d()
+d()*/
 
-*/
+
 /* 
 let e = 1
 console.log(e)
@@ -79,10 +79,10 @@ e = 2
 console.log(e)
 
 e = e*2
-console.log(e)
+console.log(e)*/
 
 
-function multiplyByTwo(num) {
+/*function multiplyByTwo(num) {
     console.log(num)
     return num*2
 }
@@ -90,16 +90,17 @@ function multiplyByTwo(num) {
 let f = multiplyByTwo(1)
 console.log(f)
 console.log(multiplyByTwo(1))
-console.log(num)
 
+console.log(num)
 */
-/* 
-let g = {
+
+ 
+/*let g = {
     myMethod: function (){
         console.log("hello");
     }
 }
-g.myMethod()
+g.myMethod()*/
 
 /*                                                              //ez nem fog működni, csak pl
 let window = {
@@ -112,11 +113,11 @@ let window = {
 window.addEventListener("load", loadEvent)
 */
 
-let h = {
+/*let h = {
     anotherMethod: function(text){
         return `You sent the following argument to this method: ${text}`
     }
 }
 let i = h.anotherMethod("argument")
 console.log(i)
-console.log(h.anotherMethod("another argument"))
+console.log(h.anotherMethod("another argument"))*/
