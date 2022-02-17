@@ -236,7 +236,7 @@ window.addEventListener("load", loadEvent);
 function loadEvent() {
     console.log("load2")
 
-    let rootElement = document.getElementById("root")
+    let rootElement = document.getElementById("root")  //változó a rootelemekkel = beolvasom a #root elemeit, itt érem el őket
 
     let card2 = function (title, year, rate){
         return `
