@@ -238,7 +238,17 @@ function loadEvent() {
 
     let rootElement = document.getElementById("root")  //változó a rootelemekkel = beolvasom a #root elemeit, itt érem el őket
 
-    let card2 = function (title, year, rate){
+    /* let card2 = function (title, year, rate){
+        return `
+        <div class="card">
+            <h2>${title}</h2>
+            <div class="time">${year}</div>
+            <div class="rate">${rate}</div>
+        </div>
+        `;
+    } */
+
+    const card2 = (title, year, rate) => {
         return `
         <div class="card">
             <h2>${title}</h2>
@@ -256,10 +266,13 @@ function loadEvent() {
 
     rootElement.insertAdjacentHTML("beforeend", card2(anotherFavouriteMovie.title, anotherFavouriteMovie.year, anotherFavouriteMovie.rate));
 
-    for (const movieSend of movies) { 
-        
+    /* for (const movieSend of movies) { 
         rootElement.insertAdjacentHTML("beforeend", card2(movieSend.title, movieSend.year, movieSend.rate));
-    }
+    } */
+
+    movies.map(movieSend => {
+        rootElement.insertAdjacentHTML("beforeend", card2(movieSend.title, movieSend.year, movieSend.rate));
+    })
 
     console.log(movies);
 }
